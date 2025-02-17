@@ -9,8 +9,17 @@
     "email": "info@martonpaulo.com",
     "url": "https://www.martonpaulo.com"
   },
-  "description": "",
-  "keywords": [],
+  "description": "Blog application that leverages GitHub's API to display a user's profile and blog posts. The posts are managed as GitHub issues, meaning the title is the post's title and the issue content is the post body",
+  "keywords": [
+    "GitHub",
+    "GitHub API",
+    "blog",
+    "react",
+    "typescript",
+    "vite",
+    "markdown",
+    "axios"
+  ],
   "repository": "github:martonpaulo/github-blog",
   "private": true,
   "scripts": {
