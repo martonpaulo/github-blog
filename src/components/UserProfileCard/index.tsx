@@ -9,7 +9,6 @@ import {
   SocialItem,
 } from "@/components/UserProfileCard/styles";
 import { author } from "@/data/author";
-import { H2 } from "@/styles/typography";
 import { getCountText } from "@/utils/textFormatter";
 
 export function UserProfileCard() {
@@ -29,7 +28,7 @@ export function UserProfileCard() {
     <CardContainer>
       <Avatar src={avatarUrl} alt={`Avatar of ${name}`} />
       <ProfileInfo>
-        <H2>{name}</H2>
+        <h2>{name}</h2>
         <Bio>{description}</Bio>
         <Social>
           <SocialItem href={`https://github.com/${username}`} target="_blank">

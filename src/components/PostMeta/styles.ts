@@ -8,4 +8,8 @@ export const PostMetaContainer = styled.div`
   p {
     color: ${(props) => props.theme.colors.baseSpan};
   }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 `;

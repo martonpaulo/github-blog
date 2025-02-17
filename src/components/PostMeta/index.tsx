@@ -1,6 +1,5 @@
 import { PostMetaContainer } from "@/components/PostMeta/styles";
 import { posts } from "@/data/posts";
-import { H2 } from "@/styles/typography";
 import { getCountText } from "@/utils/textFormatter";
 
 export function PostMeta() {
@@ -9,7 +8,7 @@ export function PostMeta() {
 
   return (
     <PostMetaContainer>
-      <H2>Posts</H2>
+      <h2>Posts</h2>
       <p>{`${postsCount} ${postsText}`}</p>
     </PostMetaContainer>
   );

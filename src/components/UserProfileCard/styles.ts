@@ -10,6 +10,10 @@ export const Avatar = styled.img`
 export const ProfileInfo = styled.div`
   display: flex;
   flex-direction: column;
+
+  h2 {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Bio = styled.p`

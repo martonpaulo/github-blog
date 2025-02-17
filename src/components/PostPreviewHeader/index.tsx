@@ -6,7 +6,6 @@ import {
   Social,
   SocialItem,
 } from "@/components/PostPreviewHeader/styles";
-import { H2 } from "@/styles/typography";
 import { PostType } from "@/types/post";
 import { timeAgo } from "@/utils/dateFormatter";
 import { getCountText } from "@/utils/textFormatter";
@@ -25,7 +24,7 @@ export function PostPreviewHeader({ post }: PostPreviewHeaderProps) {
   return (
     <CardContainer hasBorderBottom={false}>
       <ProfileInfo>
-        <H2>{title}</H2>
+        <h2>{title}</h2>
         <Social>
           <SocialItem
             href={`https://github.com/${authorUsername}`}
