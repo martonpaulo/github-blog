@@ -1,5 +1,5 @@
-import { PostPreviewHeader } from "@/components/PostPreviewHeader";
 import { PostBody } from "@/components/PostBody";
+import { PostPreviewHeader } from "@/components/PostPreviewHeader";
 import { usePost } from "@/hooks/usePost";
 
 export function PostPage() {

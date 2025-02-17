@@ -1,5 +1,5 @@
-import { PostPreview } from "@/components/PostPreview";
 import { PostFeedContainer } from "@/components/PostFeed/styles";
+import { PostPreview } from "@/components/PostPreview";
 import { posts } from "@/data/posts";
 
 export function PostFeed() {

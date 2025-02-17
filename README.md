@@ -20,7 +20,7 @@ For more of my work, visit my portfolio: [martonpaulo.com](https://martonpaulo.c
 
 ## 🛠️ Technologies Used
 
-This project is built using React, Vite, TypeScript, Styled Components, React Router Dom, and GitHub Actions.
+This project is built using React, Vite, TypeScript, Styled Components, React Router Dom, React Compiler, and GitHub Actions.
 
 ## 🚀 Getting Started
 
@@ -47,13 +47,13 @@ In the project directory, you can run the following scripts:
 - [x] Change port to 3000
 - [x] Initial setup by clearing unnecessary files
 - [x] Add responsive layout
-- [ ] Set up GitHub repository
+- [x] Set up GitHub repository
+- [x] Add GitHub Actions and deploy to GitHub Pages
 - [ ] Create repository issues
 - [ ] Add package.json description and keywords
 - [ ] Add README description
 - [ ] Add GitHub description
 - [ ] Add API information
-- [ ] Add GitHub Actions and deploy to GitHub Pages
 - [ ] List project features
 - [ ] List project technologies
 - [ ] Add Axios
