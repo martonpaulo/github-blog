@@ -1,20 +1,15 @@
 export const defaultTheme = {
   colors: {
-    green: "#41B445",
     blue: "#478BE6",
     white: "#FFFFFF",
 
-    baseTitle: "#D1D7E0",
-    baseSubtitle: "#9198A1",
     baseText: "#D1D7E0",
     baseSpan: "#9198A1",
-    baseLabel: "#9198A1",
-    baseBorder: "#3D444D",
-    basePost: "#202830",
-    baseProfile: "#262C36",
     baseBackground: "#151B23",
-    baseInput: "#202830",
     baseFocus: "#316DCA",
+    baseBorder: "#3D444D",
+    baseForeground: "#202830",
+    baseCard: "#262C36",
     baseHover: "#21272F",
   },
 

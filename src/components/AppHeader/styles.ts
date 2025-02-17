@@ -34,5 +34,5 @@ export const Path = styled(Link)<PathProps>`
 `;
 
 export const Slash = styled.span`
-  color: ${(props) => props.theme.colors.baseSubtitle};
+  color: ${(props) => props.theme.colors.baseSpan};
 `;

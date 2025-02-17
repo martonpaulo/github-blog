@@ -5,7 +5,7 @@ interface CardWrapperProps {
 }
 
 export const CardWrapper = styled.aside<CardWrapperProps>`
-  background-color: ${(props) => props.theme.colors.baseProfile};
+  background-color: ${(props) => props.theme.colors.baseCard};
   padding: 1rem;
   border-top-right-radius: ${(props) => props.theme.sizes.borderRadius};
   border-top-left-radius: ${(props) => props.theme.sizes.borderRadius};

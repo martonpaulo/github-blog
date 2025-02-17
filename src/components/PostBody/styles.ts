@@ -10,11 +10,6 @@ export const PostBodyWrapper = styled.div`
 `;
 
 export const MarkdownContent = styled(Markdown)`
-  /* Base styles */
-  color: ${(props) => props.theme.colors.baseText};
-  line-height: 1.6;
-  font-size: 1rem;
-
   /* Headings */
   h1,
   h2,
@@ -59,8 +54,8 @@ export const MarkdownContent = styled(Markdown)`
   /* Blockquotes */
   blockquote {
     margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    background-color: ${(props) => props.theme.colors.baseProfile};
+    padding: 0.5rem 1rem 0.2rem;
+    background-color: ${(props) => props.theme.colors.baseCard};
     border-left: 2px solid ${(props) => props.theme.colors.baseBorder};
   }
 
@@ -69,14 +64,14 @@ export const MarkdownContent = styled(Markdown)`
     font-family: ${(props) => props.theme.fonts.mono};
     font-size: 0.9rem;
     padding: 0.2em 0.4em;
-    background-color: ${(props) => props.theme.colors.baseProfile};
+    background-color: ${(props) => props.theme.colors.baseCard};
   }
 
   /* Code blocks */
   pre {
     margin: 1rem 0;
     padding: 1rem;
-    background-color: ${(props) => props.theme.colors.baseProfile};
+    background-color: ${(props) => props.theme.colors.baseCard};
     overflow-x: auto;
     font-size: 0.9rem;
     line-height: 1.45;
@@ -89,13 +84,6 @@ export const MarkdownContent = styled(Markdown)`
     margin: 1.5rem 0;
   }
 
-  /* Images */
-  img {
-    max-width: 100%;
-    display: block;
-    margin: 1rem auto;
-  }
-
   /* Lists */
   ul,
   ol {
@@ -105,31 +93,5 @@ export const MarkdownContent = styled(Markdown)`
 
   li {
     margin-bottom: 0.5rem;
-  }
-
-  /* Tables */
-  table {
-    margin: 1rem 0;
-  }
-
-  th,
-  td {
-    padding: 0.6rem 1rem;
-    border: 1px solid ${(props) => props.theme.colors.baseBorder};
-  }
-
-  th {
-    background-color: ${(props) => props.theme.colors.baseBorder};
-    font-weight: 600;
-  }
-
-  /* Strikethrough */
-  del {
-    text-decoration: line-through;
-  }
-
-  /* Task lists */
-  input[type="checkbox"] {
-    margin-right: 0.5rem;
   }
 `;

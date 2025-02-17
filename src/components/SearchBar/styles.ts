@@ -26,7 +26,7 @@ export const SearchBarInput = styled.input`
   border-radius: ${(props) => props.theme.sizes.borderRadius};
   border: 1px solid ${(props) => props.theme.colors.baseBorder};
 
-  background-color: ${(props) => props.theme.colors.baseInput};
+  background-color: ${(props) => props.theme.colors.baseForeground};
   color: ${(props) => props.theme.colors.white};
 
   padding-left: 1.75rem;
@@ -40,7 +40,7 @@ export const CustomPlaceholder = styled.div`
   left: 1.75rem;
   transform: translateY(-50%);
   pointer-events: none;
-  color: ${(props) => props.theme.colors.baseLabel};
+  color: ${(props) => props.theme.colors.baseSpan};
   font-size: 0.875rem;
 `;
 

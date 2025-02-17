@@ -7,29 +7,29 @@ export const PostPreviewContainer = styled(Link)`
   border-radius: ${(props) => props.theme.sizes.borderRadius};
   border: 1px solid ${(props) => props.theme.colors.baseBorder};
 
-  background-color: ${(props) => props.theme.colors.baseInput};
+  background-color: ${(props) => props.theme.colors.baseForeground};
   color: ${(props) => props.theme.colors.white};
 
   &:hover {
-    border-color: ${(props) => props.theme.colors.baseLabel};
+    border-color: ${(props) => props.theme.colors.baseSpan};
     transition: border-color 0.1s;
     cursor: pointer;
   }
 `;
 
 export const PostTitle = styled.h3`
-  color: ${(props) => props.theme.colors.baseTitle};
+  color: ${(props) => props.theme.colors.baseText};
   line-height: 1;
 `;
 
 export const PostDate = styled.span`
   font-size: 0.75rem;
-  color: ${(props) => props.theme.colors.baseSubtitle};
+  color: ${(props) => props.theme.colors.baseSpan};
 `;
 
 export const PostBody = styled.p`
   margin-top: 0.5rem;
 
   font-size: 0.875rem;
-  color: ${(props) => props.theme.colors.baseSubtitle};
+  color: ${(props) => props.theme.colors.baseSpan};
 `;

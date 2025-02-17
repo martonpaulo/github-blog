@@ -10,5 +10,5 @@ export const OutletContainer = styled.div`
   margin: 2rem auto;
   padding: 0 1rem;
 
-  background-color: ${(props) => props.theme.colors.basePost};
+  background-color: ${(props) => props.theme.colors.baseForeground};
 `;
