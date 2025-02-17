@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SearchBarContainer = styled.div`
+export const SearchFormContainer = styled.form`
   margin-top: 0.5rem;
   position: relative;
 `;
@@ -19,7 +19,7 @@ export const SearchIcon = styled.div`
   font-size: 0.875rem;
 `;
 
-export const SearchBarInput = styled.input`
+export const SearchFormInput = styled.input`
   width: 100%;
   padding: 0.5rem;
 

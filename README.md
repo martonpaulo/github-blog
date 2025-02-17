@@ -53,9 +53,8 @@ In the project directory, you can run the following scripts:
 - [x] Add Axios
 - [x] [GitHub Users API](https://docs.github.com/pt/rest/users/users#get-a-user): `api.github.com/users/${login}`
 - [x] [GitHub Issues API](https://docs.github.com/pt/rest/issues/issues#get-an-issue): `https://api.github.com/repos/rocketseat-education/reactjs-github-blog-challenge/issues/1`
-- [ ] [GitHub Search API](https://docs.github.com/pt/rest/search): `https://api.github.com/search/issues?q=Boas%20práticas%20repo:rocketseat-education/reactjs-github-blog-challenge`
-- [ ] Add React Hook Form and Zod
-- [ ] GitHub API rate limit: `https://docs.github.com/pt/rest/search#rate-limit`
+- [x] [GitHub Search API](https://docs.github.com/pt/rest/search): `https://api.github.com/search/issues?q=Boas%20práticas%20repo:rocketseat-education/reactjs-github-blog-challenge`
+- [x] Add React Hook Form and Zod
 - [ ] Add package.json description and keywords
 - [ ] Add README description
 - [ ] Add GitHub description

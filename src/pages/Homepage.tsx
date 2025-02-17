@@ -1,6 +1,6 @@
 import { PostFeed } from "@/components/PostFeed";
 import { PostMeta } from "@/components/PostMeta";
-import { SearchBar } from "@/components/SearchBar";
+import { SearchForm } from "@/components/SearchForm";
 import { UserProfileCard } from "@/components/UserProfileCard";
 
 export function Homepage() {
@@ -8,7 +8,7 @@ export function Homepage() {
     <>
       <UserProfileCard />
       <PostMeta />
-      <SearchBar />
+      <SearchForm />
       <PostFeed />
     </>
   );
