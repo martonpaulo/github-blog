@@ -15,34 +15,32 @@ interface PostPreviewHeaderProps {
 }
 
 export function PostPreviewHeader({ post }: PostPreviewHeaderProps) {
-  const { id, title, timestamp, commentsCount, authorUsername } = post;
+  const { number, title, created_at, comments, user } = post;
+  const { login } = user;
 
-  const commentsText = getCountText(commentsCount, "comment", "comments");
+  const commentsText = getCountText(comments, "comment", "comments");
 
-  const postUrl = `https://github.com/${authorUsername}/github-blog/issues/${id}`;
+  const postUrl = `https://github.com/${login}/github-blog/issues/${number}`;
 
   return (
     <CardContainer hasBorderBottom={false}>
       <ProfileInfo>
         <h2>{title}</h2>
         <Social>
-          <SocialItem
-            href={`https://github.com/${authorUsername}`}
-            target="_blank"
-          >
+          <SocialItem href={`https://github.com/${login}`} target="_blank">
             <GithubLogo weight="bold" />
-            <span>{authorUsername}</span>
+            <span>{login}</span>
           </SocialItem>
 
           <SocialItem href={postUrl} target="_blank">
             <CalendarBlank weight="bold" />
-            <span>{timeAgo(timestamp)}</span>
+            <span>{timeAgo(created_at)}</span>
           </SocialItem>
 
           <SocialItem href={postUrl} target="_blank">
             <ChatCircle weight="bold" />
             <span>
-              <strong>{commentsCount}</strong> {commentsText}
+              <strong>{comments}</strong> {commentsText}
             </span>
           </SocialItem>
         </Social>

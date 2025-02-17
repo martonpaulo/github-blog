@@ -1,8 +1,10 @@
+import { AuthorType } from "@/types/author";
+
 export type PostType = {
-  id: string;
+  number: number;
   title: string;
-  authorUsername: string;
-  timestamp: string;
-  commentsCount: number;
-  content: string;
+  user: AuthorType;
+  created_at: string;
+  comments: number;
+  body: string;
 };

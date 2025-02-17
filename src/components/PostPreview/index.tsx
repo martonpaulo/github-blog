@@ -13,13 +13,13 @@ interface PostPreviewProps {
 }
 
 export function PostPreview({ post }: PostPreviewProps) {
-  const { title, id, timestamp, content } = post;
+  const { title, number, created_at, body } = post;
 
   return (
-    <PostPreviewContainer to={`/post/${id}`}>
+    <PostPreviewContainer to={`/post/${number}`}>
       <PostTitle>{title}</PostTitle>
-      <PostDate>{timeAgo(timestamp)}</PostDate>
-      <PostBody>{getSummary(content)}</PostBody>
+      <PostDate>{timeAgo(created_at)}</PostDate>
+      <PostBody>{getSummary(body)}</PostBody>
     </PostPreviewContainer>
   );
 }

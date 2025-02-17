@@ -40,8 +40,8 @@ function removeMarkdown(markdown: string) {
   return markdown;
 }
 
-export function getSummary(content: string) {
-  const plainText = removeMarkdown(content);
+export function getSummary(body: string) {
+  const plainText = removeMarkdown(body);
   return plainText.slice(0, 256);
 }
 

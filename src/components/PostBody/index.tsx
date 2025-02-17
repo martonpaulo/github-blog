@@ -1,13 +1,13 @@
 import { MarkdownContent, PostBodyWrapper } from "@/components/PostBody/styles";
 
 interface PostBodyProps {
-  content: string;
+  body: string;
 }
 
-export function PostBody({ content }: PostBodyProps) {
+export function PostBody({ body }: PostBodyProps) {
   return (
     <PostBodyWrapper>
-      <MarkdownContent>{content}</MarkdownContent>
+      <MarkdownContent>{body}</MarkdownContent>
     </PostBodyWrapper>
   );
 }

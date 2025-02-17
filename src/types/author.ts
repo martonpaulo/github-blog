@@ -1,9 +1,8 @@
 export type AuthorType = {
+  login: string;
+  avatar_url: string;
   name: string;
-  avatarUrl: string;
-  description: string;
-  username: string;
-  customLink: string;
-  customLinkUrl: string;
-  followersCount: number;
+  bio: string;
+  blog: string;
+  followers: number;
 };

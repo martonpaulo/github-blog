@@ -1,6 +1,7 @@
 import { GithubLogo, Link, Users } from "phosphor-react";
 
 import { CardContainer } from "@/components/CardContainer";
+import { StateBox } from "@/components/StateBox";
 import {
   Avatar,
   Bio,
@@ -8,46 +9,47 @@ import {
   Social,
   SocialItem,
 } from "@/components/UserProfileCard/styles";
-import { author } from "@/data/author";
+import { useAuthor } from "@/hooks/useAuthor";
 import { getCountText } from "@/utils/textFormatter";
 
 export function UserProfileCard() {
-  const {
-    name,
-    avatarUrl,
-    description,
-    username,
-    customLink,
-    customLinkUrl,
-    followersCount,
-  } = author;
+  const { author, loading, error } = useAuthor((context) => ({
+    author: context.author,
+    loading: context.loading,
+    error: context.error,
+  }));
 
-  const followersText = getCountText(followersCount, "follower", "followers");
+  if (loading || error || !author) {
+    return <StateBox loading={loading} error={error} data={author} />;
+  }
+
+  const { name, avatar_url, bio, login, blog, followers } = author;
+  const followersText = getCountText(followers, "follower", "followers");
 
   return (
     <CardContainer>
-      <Avatar src={avatarUrl} alt={`Avatar of ${name}`} />
+      <Avatar src={avatar_url} alt={`Avatar of ${name}`} />
       <ProfileInfo>
         <h2>{name}</h2>
-        <Bio>{description}</Bio>
+        <Bio>{bio}</Bio>
         <Social>
-          <SocialItem href={`https://github.com/${username}`} target="_blank">
+          <SocialItem href={`https://github.com/${login}`} target="_blank">
             <GithubLogo weight="bold" />
-            <span>{username}</span>
+            <span>{login}</span>
           </SocialItem>
 
-          <SocialItem href={customLinkUrl} target="_blank">
+          <SocialItem href={blog} target="_blank">
             <Link weight="bold" />
-            <span>{customLink}</span>
+            <span>{blog}</span>
           </SocialItem>
 
           <SocialItem
-            href={`https://github.com/${followersCount}?tab=followers`}
+            href={`https://github.com/${followers}?tab=followers`}
             target="_blank"
           >
             <Users weight="bold" />
             <span>
-              <strong>{followersCount}</strong> {followersText}
+              <strong>{followers}</strong> {followersText}
             </span>
           </SocialItem>
         </Social>

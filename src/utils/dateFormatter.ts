@@ -1,6 +1,6 @@
-export function timeAgo(timestamp: string): string {
+export function timeAgo(created_at: string): string {
   const now = new Date();
-  const past = new Date(timestamp);
+  const past = new Date(created_at);
 
   const seconds = Math.floor((now.getTime() - past.getTime()) / 1000);
 

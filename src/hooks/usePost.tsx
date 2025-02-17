@@ -1,24 +1,38 @@
 import { useLocation, useParams } from "react-router-dom";
 
-import { posts } from "@/data/posts";
+import { usePosts } from "@/hooks/usePosts";
+import { PostType } from "@/types/post";
 
-export function usePost() {
-  const path = useLocation().pathname;
-  const { postId } = useParams<{ postId: string }>();
+interface PostMetaProps {
+  id: "home" | "not-found" | number;
+  post: PostType | null;
+}
 
-  if (path === "/") {
+export function usePost(): PostMetaProps {
+  const location = useLocation();
+  const posts = usePosts((context) => context.posts);
+
+  const { postNumber } = useParams<{ postNumber: string }>();
+
+  const notFoundMeta: PostMetaProps = {
+    id: "not-found",
+    post: null,
+  };
+
+  if (location.pathname === "/") {
     return { id: "home", post: null };
   }
 
-  if (!path.includes("/post/")) {
-    return { id: "not-found", post: null };
+  if (!location.pathname.includes("/post/")) {
+    return notFoundMeta;
   }
 
-  const post = posts.find((post) => post.id === postId);
+  const postId = Number(postNumber);
+  const foundPost = posts.find((post) => post.number === postId);
 
-  if (!post) {
-    return { id: "not-found", post: null };
+  if (!foundPost) {
+    return notFoundMeta;
   }
 
-  return { id: postId, post };
+  return { id: foundPost.number, post: foundPost };
 }

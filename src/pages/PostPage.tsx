@@ -1,18 +1,19 @@
 import { PostBody } from "@/components/PostBody";
 import { PostPreviewHeader } from "@/components/PostPreviewHeader";
+import { StateBox } from "@/components/StateBox";
 import { usePost } from "@/hooks/usePost";
 
 export function PostPage() {
   const { post } = usePost();
 
   if (!post) {
-    return <h1>Post not found</h1>;
+    return <StateBox data={post} />;
   }
 
   return (
     <>
       <PostPreviewHeader post={post} />
-      <PostBody content={post.content} />
+      <PostBody body={post.body} />
     </>
   );
 }

@@ -49,19 +49,19 @@ In the project directory, you can run the following scripts:
 - [x] Add responsive layout
 - [x] Set up GitHub repository
 - [x] Add GitHub Actions and deploy to GitHub Pages
-- [ ] Create repository issues
+- [x] Create repository issues
+- [x] Add Axios
+- [x] [GitHub Users API](https://docs.github.com/pt/rest/users/users#get-a-user): `api.github.com/users/${login}`
+- [x] [GitHub Issues API](https://docs.github.com/pt/rest/issues/issues#get-an-issue): `https://api.github.com/repos/rocketseat-education/reactjs-github-blog-challenge/issues/1`
+- [ ] [GitHub Search API](https://docs.github.com/pt/rest/search): `https://api.github.com/search/issues?q=Boas%20práticas%20repo:rocketseat-education/reactjs-github-blog-challenge`
+- [ ] Add React Hook Form and Zod
+- [ ] GitHub API rate limit: `https://docs.github.com/pt/rest/search#rate-limit`
 - [ ] Add package.json description and keywords
 - [ ] Add README description
 - [ ] Add GitHub description
 - [ ] Add API information
 - [ ] List project features
 - [ ] List project technologies
-- [ ] Add Axios
-- [ ] Add React Hook Form and Zod
-- [ ] GitHub API rate limit: `https://docs.github.com/pt/rest/search#rate-limit`
-- [ ] [GitHub Users API](https://docs.github.com/pt/rest/users/users#get-a-user): `api.github.com/users/${username}`
-- [ ] [GitHub Issues API](https://docs.github.com/pt/rest/issues/issues#get-an-issue): `https://api.github.com/repos/rocketseat-education/reactjs-github-blog-challenge/issues/1`
-- [ ] [GitHub Search API](https://docs.github.com/pt/rest/search): `https://api.github.com/search/issues?q=Boas%20práticas%20repo:rocketseat-education/reactjs-github-blog-challenge`
 - [ ] Add project recording
 - [ ] Add project to portfolio
 
