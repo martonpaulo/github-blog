@@ -10,7 +10,7 @@ The app fetches data from GitHub's Users, Issues, and Search APIs, displays a su
 
 <img alt="Recording of live application" src="public/uploads/recording.gif" />
 
-🔗 **Live Project:** [martonpaulo.github.io/github-blog](https://martonpaulo.github.io/github-blog)
+🔗 **Live Project:** [archive.martonpaulo.com/github-blog](https://archive.martonpaulo.com/github-blog/)
 
 <br />
 
